@@ -1,0 +1,8 @@
+[user]
+	name = oaeen
+	email = egaotianxiang@gmail.com
+[http]
+	sslVerify = false
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = https://127.0.0.1:7890

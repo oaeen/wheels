@@ -34,10 +34,12 @@
 
 * `wsl_install.md` 介绍 WSL(Windows Subsystem Linux) 配置过程
 
-* `app_scoop.ps1` 使用 scoop 进行软件批量安装的 脚本
-
-* `app_winget.ps1` 使用 winget 进行软件批量安装的脚本
-
-* `drivers_winget.ps1` 使用 winget 进行驱动批量安装的脚本
-
-* `oh-my-tuna.py` 镜像源一键配置，[ref: Oh My TUNA](https://tuna.moe/oh-my-tuna/)
+* script 文件夹下
+  
+  * `app_scoop.ps1` 使用 scoop 进行软件批量安装的 脚本
+  
+  * `app_winget.ps1` 使用 winget 进行软件批量安装的脚本
+  
+  * `drivers_winget.ps1` 使用 winget 进行驱动批量安装的脚本
+  
+  * `oh-my-tuna.py` 镜像源一键配置，[ref: Oh My TUNA](https://tuna.moe/oh-my-tuna/)

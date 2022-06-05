@@ -83,3 +83,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # 
 
 > ref https://chrislayers.com/2021/08/01/scripting-winget/
+
+# 2. 软件配置
+
+## 2.1 Git
+
+设置 email & name
+
+```
+git config --global user.email "me@oaeen.com"
+git config --global user.name "oaeen"
+```

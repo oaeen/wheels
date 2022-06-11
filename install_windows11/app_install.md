@@ -86,6 +86,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 # 2. 软件配置
 
+## 2.0 Fonts
+
+安装如下字体 用于优化 VS Code 显示
+
+https://www.jetbrains.com/zh-cn/lp/mono/
+
+https://fonts.google.com/noto/specimen/Noto+Sans+SC
+
+https://fonts.google.com/specimen/Source+Code+Pro
+
 ## 2.1 Git
 
 设置 email & name
@@ -94,3 +104,20 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 git config --global user.email "me@oaeen.com"
 git config --global user.name "oaeen"
 ```
+
+## 2.2 Zotero
+
+设置 Onedrive 软链接用于同步
+
+```cmd
+mklink /J "C:\Users\az\Zotero" "C:\Users\az\OneDrive\Zotero"
+```
+
+## 2.3 IrfanView
+
+安装 irfanview 后 可选下载 & 安装 irfanview plugins
+
+https://www.irfanview.com/64bit.htm
+
+
+

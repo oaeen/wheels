@@ -1,4 +1,4 @@
-爬取 Github 上可用的 4字名等
+爬取 Github 上可用的 4字名
 
 run
 

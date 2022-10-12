@@ -6,6 +6,6 @@
 
 * eg.
   
-  * `docker run --rm -it -v /d/videos:/app siguremo/yutto BV1vz4y117h9`
+  * `docker run --rm -it -v /e/videos:/app siguremo/yutto BV1vz4y117h9`
   
-  * `docker run --rm -it -v /d/videos:/app siguremo/yutto --batch --proxy http://127.0.0.1:7890 https://www.bilibili.com/video/BVxxxxxxxx`
+  * `docker run --rm -it -v /e/videos:/app siguremo/yutto --batch --proxy http://127.0.0.1:7890 https://www.bilibili.com/video/BVxxxxxxxx`

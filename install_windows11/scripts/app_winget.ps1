@@ -20,6 +20,7 @@ $apps = @(
   @{ id = "xiaomi.miuiplus" }, 
   @{ id = "Microsoft.PowerToys" }, 
   @{ id = "agalwood.Motrix" }, 
+  @{ id = "Alibaba.aDrive" },
   @{ id = "MarkText.MarkText" }, 
   @{ id = "JohnMacFarlane.Pandoc" }, 
   @{ id = "SumatraPDF.SumatraPDF" },

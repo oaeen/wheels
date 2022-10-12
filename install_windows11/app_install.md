@@ -98,11 +98,17 @@ https://fonts.google.com/specimen/Source+Code+Pro
 
 ## 2.1 Git
 
-设置 email & name
-
 ```
+# 设置 email & name
 git config --global user.email "me@oaeen.com"
 git config --global user.name "oaeen"
+
+# 设置代理
+git config --global http.proxy 127.0.0.1:7890
+git config --global https.proxy 127.0.0.1:7890
+git config --global --add remote.origin.proxy "127.0.0.1:7890"
+git config --global http.sslBackend "openssl"
+git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
 ```
 
 ## 2.2 Zotero

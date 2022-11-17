@@ -30,9 +30,9 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 执行如下脚本即可（使用 管理员身份执行 可避免安装过程的 UAC 弹窗 ）
 
 ```
-./app_winget.ps1     # 安装常用软件
+./winget_app.ps1     # 安装常用软件
 
-./driver_winget.ps1  # 安装驱动
+./drivers.ps1  # 安装驱动
 ```
 
 * 使用 `winget` 升级安装的软件
@@ -52,12 +52,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 iex(New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 ```
 
-自定义位置，cmd 中执行
-
-```powershell
-mklink /J "C:\Users\[user]\scoop\" "D:\Apps\Scoop"
-```
-
 ### 1.2.2 Scoop 安装软件
 
 > 添加 bucket 需要 Git，请在使用 Scoop 安装前 确保 Git 已安装
@@ -65,7 +59,7 @@ mklink /J "C:\Users\[user]\scoop\" "D:\Apps\Scoop"
 执行如下脚本即可：
 
 ```
-./app_scoop.ps1
+./scoop_app.ps1
 ```
 
 使用 `scoop` 升级安装的软件
@@ -74,11 +68,6 @@ mklink /J "C:\Users\[user]\scoop\" "D:\Apps\Scoop"
 scoop update *
 ```
 
-## 1.3 安装 Chocolatey
-
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-```
 
 # 
 
@@ -103,7 +92,11 @@ https://fonts.google.com/specimen/Source+Code+Pro
 git config --global user.email "me@oaeen.com"
 git config --global user.name "oaeen"
 
-# 设置代理
+# 设置安全仓库
+# https://github.blog/2022-04-12-git-security-vulnerability-announced/
+git config --global --add safe.directory *
+
+# 设置代理[可选]
 git config --global http.proxy 127.0.0.1:7890
 git config --global https.proxy 127.0.0.1:7890
 git config --global --add remote.origin.proxy "127.0.0.1:7890"
@@ -111,7 +104,16 @@ git config --global http.sslBackend "openssl"
 git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
 ```
 
-## 2.2 Zotero
+## 2.2 WSL2 安装
+
+详见 [安装 WSL | Microsoft Docs]([安装 WSL | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/wsl/install))
+
+1. **管理员模式** powershell 中执行 `wsl --install`
+
+2. 可选：安装 Ubuntu 22.04 LTS `winget install -e --accept-package-agreements --id 9PN20MSR04DW`
+
+
+## 2.3 Zotero
 
 设置 Onedrive 软链接用于同步
 
@@ -119,7 +121,7 @@ git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
 mklink /J "C:\Users\az\Zotero" "C:\Users\az\OneDrive\Zotero"
 ```
 
-## 2.3 IrfanView
+## 2.4 IrfanView
 
 安装 irfanview 后 可选下载 & 安装 irfanview plugins
 

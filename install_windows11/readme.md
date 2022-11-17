@@ -13,7 +13,7 @@
 
 ## 0.3 安装
 
-* 可选项，重定向用户文件夹至 D 盘 或 其他相应位置，在系统安装创建用户前，通过`Shift F10` 打开命令行窗口，键入如下命令  
+* 可选项，重定向用户文件夹至 D 盘 或 其他相应位置(不推荐，可能会遇到问题)。在系统安装创建用户前，通过`Shift F10` 打开命令行窗口，键入如下命令
   
   ```shell
   # 复制 C:\Users 到 D:\Users
@@ -28,18 +28,18 @@
 
 [HEU_KMS_Activator](https://github.com/zbezj/HEU_KMS_Activator/releases/)
 
+
 # 附：自用系统安装配置
 
 * `app_install.md` 介绍 Windows 常用软件配置流程
 
-* `wsl_install.md` 介绍 WSL(Windows Subsystem Linux) 配置过程
-
 * script 文件夹下
-  
-  * `app_scoop.ps1` 使用 scoop 进行软件批量安装的 脚本
-  
-  * `app_winget.ps1` 使用 winget 进行软件批量安装的脚本
-  
-  * `drivers_winget.ps1` 使用 winget 进行驱动批量安装的脚本
-  
+  * `scoop_app.ps1` 使用 scoop 进行软件安装
+  * `winget_app.ps1` 使用 winget 进行软件安装
+  * `drivers.ps1` 使用 winget 进行驱动安装
+
+* config 文件夹下
   * `oh-my-tuna.py` 镜像源一键配置，[ref: Oh My TUNA](https://tuna.moe/oh-my-tuna/)
+  * `winget_upgrade_with_pinned_package.py` winget 更新脚本，锁定一些特定版本的软件
+  *  `Microsoft.PowerShell_profile.ps1`  powershell 配置文件
+  * `.gitconfig` Git 配置文件

@@ -6,7 +6,7 @@
 
 ```
 # conda init
-conda create -n colab python=3.7
+conda create -n colab python=3.8
 conda activate colab
 ```
 
@@ -15,8 +15,7 @@ conda activate colab
 ```
 # make your requirements.txt, then
 
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
-
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 pip install --requirement colab.txt --cache-dir="pkgs" --index-url http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 ```
 
@@ -56,7 +55,7 @@ tf.test.is_gpu_available()
 ## 附：ubuntu 下 搭建
 
 ```
-# 拉去 docker 镜像
+# 拉取 docker 镜像
 docker pull ubuntu:20.04
 
 # exec ubuntu
@@ -69,13 +68,13 @@ apt install wget vim gcc cmake libpq-dev python-dev build-essential -y
 
 ```
 # download miniconda 
-wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
 # install miniconda 
-bash https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh
+bash https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
 
 # conda init
-conda create -n py37 python=3.7
-conda activate py37
+conda create -n py38 python=3.8
+conda activate py38
 
 ```
 
@@ -83,7 +82,7 @@ conda activate py37
 
 ```
 # make your requirements.txt, then
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 
 pip install --requirement colab.txt --cache-dir="pkgs" --index-url http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 ```
@@ -96,9 +95,12 @@ pip install --requirement colab.txt --cache-dir="pkgs" --index-url http://mirror
 因为编译或其他原因没有安装的包
 
 ```
+# colab & google 相关包
 # jaxlib @ https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.22+cuda11.cudnn805-cp37-cp37m-manylinux2014_x86_64.whl
 # en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1-py3-none-any.whl
 # dlib==19.24.0
+# dbus-python==1.2.16
+# editdistance==0.5.3
 # GDAL==2.2.2
 # rpy2==3.4.5
 # screen-resolution-extra==0.0.0
@@ -111,4 +113,5 @@ pip install --requirement colab.txt --cache-dir="pkgs" --index-url http://mirror
 # xkit==0.0.0
 # httpstan==4.6.1 # linux only
 # pystan==3.3.0
+# intel-openmp==2023.0.0
 ```

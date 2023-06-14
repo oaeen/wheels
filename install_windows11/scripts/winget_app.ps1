@@ -12,28 +12,28 @@ $apps = @(
   @{ id = "Microsoft.VisualStudioCode" }, 
   @{ id = "Docker.DockerDesktop" }, 
   @{ id = "Anaconda.Miniconda3" }, 
-  @{ id = "GoLang.Go.1.19" }, 
+  @{ id = "GoLang.Go" }, 
   @{ id = "VMware.WorkstationPro" }, 
   @{ id = "JetBrains.Toolbox" },
   
   # daily
   @{ id = "Telegram.TelegramDesktop" }, 
-  @{ id = "Tencent.QQ" }, 
+  # @{ id = "Tencent.QQ" },  recommended to use QQ NT version, which is not available in winget
   @{ id = "Tencent.WeChat" }, 
-  @{ id = "Tencent.VooVMeeting" }, 
+  @{ id = "Tencent.TencentMeeting" }, 
   @{ id = "Valve.Steam" }, 
   
   # tools
-  @{ id = "Fndroid.ClashForWindows" }, 
+  @{ id = "GyDi.ClashVerge" }, 
   @{ id = "Youqu.ToDesk" },
+  @{ id = "Guru3D.Afterburner" },
   
   @{ id = "Tonec.InternetDownloadManager" },
   @{ id = "qBittorrent.qBittorrent" }, 
   @{ id = "WinSCP.WinSCP" }, 
-  @{ id = "Alibaba.aDrive" },
   
   @{ id = "Rizonesoft.Notepad3" }, 
-  @{ id = "Obsidian.Obsidian" }, 
+  @{ id = "appmakes.Typora" }, 
   @{ id = "JohnMacFarlane.Pandoc" }, 
   @{ id = "SumatraPDF.SumatraPDF" },
   
@@ -47,7 +47,6 @@ $apps = @(
   @{ id = "LiErHeXun.Quicker" }, 
   @{ id = "voidtools.Everything" }, 
   @{ id = "Microsoft.PowerToys" }, 
-  @{ id = "Bilibili.Livehime" }, 
   @{ id = "Bopsoft.Listary" }, 
 
   # Microsoft Store

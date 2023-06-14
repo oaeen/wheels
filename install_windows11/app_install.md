@@ -41,6 +41,13 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
   winget upgrade --all
   ```
 
+### 1.1.3 Winget Pin 指定版本软件
+
+```
+# 不更新以下软件,  需要 winget 版本 1.5.441 以上
+winget pin add --id appmakes.Typora
+```
+
 ## 1.2 使用 Scoop 安装软件
 
 ### 1.2.1 安装 Scoop

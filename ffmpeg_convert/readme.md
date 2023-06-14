@@ -1,5 +1,7 @@
 ## 视频格式转换
 
+自用的一个视频格式批量转换脚本
+
 * FFMPEG 下载
   * 可使用 scoop：`scoop install ffmpeg`
   * 或使用 choco：`choco install ffmpeg`

@@ -1,8 +1,7 @@
 import os
 import shutil
 
-# 判定两个文件夹内的文件是否相同
-
+# 用于判定两个文件夹内的文件是否相同
 
 def diff(folder1, folder2):
     f1 = []

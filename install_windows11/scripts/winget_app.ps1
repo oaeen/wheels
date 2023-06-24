@@ -9,7 +9,7 @@ $apps = @(
   @{ id = "Git.Git" }, 
   @{ id = "Microsoft.PowerShell" }, 
   @{ id = "JanDeDobbeleer.OhMyPosh" }, 
-  @{ id = "Microsoft.VisualStudioCode" }, 
+  @{ id = "Microsoft.VisualStudioCode.Insiders" }, # change to insiders version for copilot chat
   @{ id = "Docker.DockerDesktop" }, 
   @{ id = "Anaconda.Miniconda3" }, 
   @{ id = "GoLang.Go" }, 
@@ -22,34 +22,42 @@ $apps = @(
   @{ id = "Tencent.WeChat" }, 
   @{ id = "Tencent.TencentMeeting" }, 
   @{ id = "Valve.Steam" }, 
+  @{ id = "EpicGames.EpicGamesLauncher" }, 
   
   # tools
   @{ id = "GyDi.ClashVerge" }, 
   @{ id = "Youqu.ToDesk" },
-  @{ id = "Guru3D.Afterburner" },
-  
-  @{ id = "Tonec.InternetDownloadManager" },
-  @{ id = "qBittorrent.qBittorrent" }, 
-  @{ id = "WinSCP.WinSCP" }, 
   
   @{ id = "Rizonesoft.Notepad3" }, 
-  @{ id = "appmakes.Typora" }, 
-  @{ id = "JohnMacFarlane.Pandoc" }, 
   @{ id = "SumatraPDF.SumatraPDF" },
-  
-  @{ id = "Daum.PotPlayer" }, 
   @{ id = "IrfanSkiljan.IrfanView" },
+  @{ id = "Daum.PotPlayer" }, 
+  @{ id = "JohnMacFarlane.Pandoc" }, 
+  @{ id = "Gyan.FFmpeg" },
   
   @{ id = "DigitalScholar.Zotero" }, 
   @{ id = "LutzRoeder.Netron" }, 
   
+  @{ id = "Tonec.InternetDownloadManager" },
+  @{ id = "qBittorrent.qBittorrent" }, 
+  @{ id = "aria2.aria2" }, 
+  @{ id = "cURL.cURL" },
+  @{ id = "WinSCP.WinSCP" }, 
   @{ id = "M2Team.NanaZip" },
   @{ id = "LiErHeXun.Quicker" }, 
   @{ id = "voidtools.Everything" }, 
-  @{ id = "Microsoft.PowerToys" }, 
   @{ id = "Bopsoft.Listary" }, 
-
+  @{ id = "CrystalDewWorld.CrystalDiskInfo" }, 
+  @{ id = "CrystalDewWorld.CrystalDiskMark" }, 
+  @{ id = "UderzoSoftware.SpaceSniffer" }, 
+  @{ id = "GeekUninstaller.GeekUninstaller" },
+  @{ id = "Rufus.Rufus" }, 
+  @{ id = "Guru3D.Afterburner" },
+  @{ id = "CPUID.CPU-Z" }, 
+  
   # Microsoft Store
+  @{ id = "XP89DCGQ3K6VLD" }, # Microsoft PowerToys
+  @{ id = "9WZDNCRD29V9" }, # Microsoft 365
   @{ id = "9NBLGGH5R558" }, # Microsoft Todo	
   @{ id = "9MSPC6MP8FM4" }, # Microsoft Whiteboard
   @{ id = "9WZDNCRFJ3PS" }, # Microsoft Remote Desktop
@@ -72,8 +80,6 @@ Foreach ($app in $apps) {
 
 Write-Output "-----------------Installed Done-----------------"
 Write-Output "The following applications need to be installed manually"
-Write-Output "Jetbrains Tools via toolbox"
-Write-Output "Microsoft 365 via https://account.microsoft.com/services/microsoft365/"
 Write-Output "Your Device Drivers & Custom Apps"
 
 

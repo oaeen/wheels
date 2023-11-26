@@ -4,9 +4,7 @@ winget source update
 
 # driver for intel cpu & nvidia gpu
 (
-	"Intel.IntelDriverAndSupportAssistant",
-	"Nvidia.GeForceExperience",
-	"Nvidia.CUDA"
+	"Intel.IntelDriverAndSupportAssistant"
 ) | foreach { winget install -e --accept-package-agreements --id $_ }
 
 Write-Output "done"

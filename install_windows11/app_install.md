@@ -128,11 +128,8 @@ git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
 mklink /J "C:\Users\az\Zotero" "C:\Users\az\OneDrive\Zotero"
 ```
 
-## 2.4 IrfanView
+## 2.4 取消conda默认激活base环境
 
-安装 irfanview 后 可选下载 & 安装 irfanview plugins
-
-https://www.irfanview.com/64bit.htm
-
-
-
+```cmd
+conda config --set auto_activate_base false
+```

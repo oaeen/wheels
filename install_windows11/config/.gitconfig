@@ -1,8 +1,0 @@
-[user]
-	email = me@oaeen.com
-	name = oaeen
-[http]
-	postBuffer = 157286400
-	sslVerify = false
-[safe]
-	directory = *

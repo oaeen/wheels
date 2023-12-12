@@ -6,6 +6,8 @@ winget source update
 $apps = @(
   # dev env
   @{ id = "Google.Chrome" }, 
+  @{ id = "Intel.IntelDriverAndSupportAssistant" }, 
+  @{ id = "SomePythonThings.WingetUIStore" },
   @{ id = "Git.Git" }, 
   @{ id = "Microsoft.PowerShell" }, 
   @{ id = "JanDeDobbeleer.OhMyPosh" }, 
@@ -15,8 +17,6 @@ $apps = @(
   @{ id = "GoLang.Go" }, 
   @{ id = "VMware.WorkstationPro" }, 
   @{ id = "JetBrains.Toolbox" },
-
-
   @{ id = "Microsoft.OpenJDK.11" },
   
   
@@ -55,6 +55,7 @@ $apps = @(
   @{ id = "GeekUninstaller.GeekUninstaller" },
   @{ id = "Rufus.Rufus" }, 
   @{ id = "CPUID.CPU-Z" }, 
+  @{ id = "M2Team.NanaZip" }, 
   
   # Microsoft Store
   @{ id = "XP89DCGQ3K6VLD" }, # Microsoft PowerToys
@@ -62,8 +63,6 @@ $apps = @(
   @{ id = "9MSPC6MP8FM4" }, # Microsoft Whiteboard
   @{ id = "9WZDNCRFJ3PS" }, # Microsoft Remote Desktop
   @{ id = "9P1WXPKB68KX" }, # Snipaste
-  @{ id = "9N8G7TSCL18R" }, # NanaZip
-  @{ id = "9NBLGGH1ZBKW" }, # Dynamic Theme
   @{ id = "XPDNH1FMW7NB40" }	# 火绒安全软件
 );
 

@@ -6,8 +6,6 @@ winget source update
 $apps = @(
   # dev env
   @{ id = "Google.Chrome" }, 
-  @{ id = "Intel.IntelDriverAndSupportAssistant" }, 
-  @{ id = "SomePythonThings.WingetUIStore" },
   @{ id = "Git.Git" }, 
   @{ id = "Microsoft.PowerShell" }, 
   @{ id = "JanDeDobbeleer.OhMyPosh" }, 
@@ -17,19 +15,28 @@ $apps = @(
   @{ id = "GoLang.Go" }, 
   @{ id = "VMware.WorkstationPro" }, 
   @{ id = "JetBrains.Toolbox" },
+  @{ id = "Kitware.CMake" },
   @{ id = "Microsoft.OpenJDK.11" },
+  @{ id = "ScooterSoftware.BeyondCompare.5" },
+  @{ id = "Tencent.UGit" },
+  @{ id = "Enigma.VirtualBox" },
+  @{ id = "OpenJS.NodeJS.LTS" },
+  
   
   
   # daily
   @{ id = "Telegram.TelegramDesktop" }, 
   @{ id = "Tencent.QQ.NT" }, 
-  @{ id = "Tencent.WeChat" }, 
+  @{ id = "Tencent.WeChat.Universal" }, 
   @{ id = "Tencent.TencentMeeting" }, 
   @{ id = "Valve.Steam" }, 
   @{ id = "EpicGames.EpicGamesLauncher" }, 
   
   # tools
-  @{ id = "Youqu.ToDesk" },
+  @{ id = "NetEase.UURemote" },
+  @{ id = "kangfenmao.CherryStudio" },
+  @{ id = "Tencent.WeType" },
+  
   
   @{ id = "Rizonesoft.Notepad3" }, 
   @{ id = "SumatraPDF.SumatraPDF" },
@@ -60,10 +67,9 @@ $apps = @(
   # Microsoft Store
   @{ id = "XP89DCGQ3K6VLD" }, # Microsoft PowerToys
   @{ id = "9NBLGGH5R558" }, # Microsoft Todo	
-  @{ id = "9MSPC6MP8FM4" }, # Microsoft Whiteboard
   @{ id = "9WZDNCRFJ3PS" }, # Microsoft Remote Desktop
-  @{ id = "9P1WXPKB68KX" }, # Snipaste
-  @{ id = "XPDNH1FMW7NB40" }	# 火绒安全软件
+  @{ id = "9P1WXPKB68KX" }  # Snipaste
+  
 );
 
 Foreach ($app in $apps) {
